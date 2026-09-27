@@ -28,7 +28,7 @@ jcms.npc_types.YOURFACTIONNAME_NPCNAME = {
 	
 	danger = jcms.NPC_DANGER_FODDER,
 	cost = 1, -- the 'cost' of spawning this npc. Small cost means more NPCs. Big cost means this NPC will spawn alone.
-	swarmWeight = 1, -- rarity of this NPC. 1 means normal. 2 means twice as common. 0.1 means 10 times rarer than everyone else. 0 means never spawns.
+	swarmWeight = 1, -- rarity of this NPC. 1 means normal. 2 means twice as common. 0.1 means 10 times rarer than everyone else. Don't set this to 0 or math.huge, as that'll cause errors (If you want to prevent an NPC from spawning use the check function instead)
 	swarmLimit = 999, -- How many of these can spawn in a single wave.
 	
 	portalSpawnWeight = 1, -- rarity of this NPC spawning from an NPC Portal (the black-hole type structures around the map). Set to 0 to never spawn from portals.
